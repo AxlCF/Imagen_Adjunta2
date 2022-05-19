@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 100% 13%;
+}
+
+header {
+    Border: 2px solid #D99694;
+    background-color: #F2DCDB;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    display: flex;
+    margin: 0.3em;
+}
+
+nav {
+    Border: 2px solid #D99694;
+    background-color: #F2DCDB;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    display: flex;
+    margin: 0.3em;
+    
+}
+
+section {
+    Border: 2px solid #D99694;
+    background-color: #F2DCDB;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.3em;
+}
+
+article {
+    background-color: #DCE6F2;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    height: 80px;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+aside {
+    Border: 2px solid #D99694;
+    background-color: #F2DCDB;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    Border: 2px solid #D99694;
+    background-color: #F2DCDB;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.3em;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        background-color: rgb(226, 0, 0);
+        grid-column: 1/3;
+    }
+    aside {
+        background-color: rgb(34, 174, 199);
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        background-color: rgb(226, 0, 0);
+        grid-column: 2/3;
+    }
+    aside {
+        background-color: rgb(34, 174, 199);
+        grid-column: 1/2;
+        float: flex;
+        margin-top: -405px;
+        height: 750%;
+    }
+    footer {
+        margin-top: -40px;
+    }
+}
